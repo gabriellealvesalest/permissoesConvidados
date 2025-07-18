@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo de Permissões de Convidado no monday.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.75rem;
+        }
+        .topic-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #4b5563;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .permission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .permission-column {
+            background-color: #f9fafb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .permission-column h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+        .permission-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            background-color: #ffffff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        .allowed {
+            color: #10b981; /* Green checkmark */
+        }
+        .not-allowed {
+            color: #ef4444; /* Red x-mark */
+        }
+        .icon {
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
+        }
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-title">Comparativo de Permissões de Convidado no monday.com</h1>
+
+        <!-- Seção: Permissões de Convidado - Conta -->
+        <div class="topic-title">Conta</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Fazer o upload de arquivos em quadros e documentos
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Excluir arquivos
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Criar automações/integrações
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Criar integrações
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Analisar recursos experimentais com o monday.labs
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Ver página de uso das automações
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Criar projetos e portfólios
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Crie e edite automações/colunas baseadas em IA e conte com a ajuda de Assistentes de IA
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Convidar usuários de domínios não autorizados
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Chamar convidados
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar áreas de trabalho
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> @Mencionar/inscrever todos da conta
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Gerar tokens de API
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Editar cronogramas
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Os responsáveis pela área de trabalho podem se adicionar como responsáveis nos recursos de sua área de trabalho
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: Quadros -->
+        <div class="topic-title">Quadros</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Crie visualizações de quadro
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Excluir visualizações criadas por você
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Excluir visualizações criadas por outros usuários
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Exportar dados para o Excel
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Mover grupos para outros quadros
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar quadros principais
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar quadros privados
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar quadros compartilháveis
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Excluir/arquivar quadros que pertencem a mim
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Divulgar quadros na web por meio de um link público
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: Elementos -->
+        <div class="topic-title">Elementos</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Excluir elementos criados por você mesmo
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Excluir elementos criados por outros usuários
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Mover elementos para outros quadros
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar docs em elementos
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: Painéis, Workflow, Docs -->
+        <div class="topic-title">Painéis</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    Nenhuma permissão marcada como permitida.
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar painéis principais
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-title">Workflow</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    Nenhuma permissão marcada como permitida.
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar workflow principal
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar workflow privado(a)
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-title">Docs</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    Nenhuma permissão marcada como permitida.
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar docs principais
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar docs privados
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar docs compartilháveis
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Divulgue docs na web por meio de um link público
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: Gestão de Usuários e Comunicação -->
+        <div class="topic-title">Gestão de Usuários</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Adicionar foto de perfil
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Crie equipes
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Excluir equipes que pertencem ao usuário
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Editar nomes e imagens de equipes que pertencem ao usuário
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Adicionar/remover membros de equipes que pertencem ao usuário
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Gerencie todas as equipes
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Visualizar a página de equipes e os cartões de equipes
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Atribuir usuários a cronogramas
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-title">Comunicação</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Criar atualizações de elementos e comentários em docs
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Editar atualizações de elementos e comentários em docs que pertencem a mim
+                </div>
+                <div class="permission-item">
+                    <span class="icon allowed">&#10003;</span> Excluir atualizações de elementos e comentários em docs que pertencem a mim
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Os proprietários do quadro podem silenciar as notificações para todos os usuários
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Receber e interagir com e-mails dinâmicos (AMP / Mensagens acionáveis)
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção: Privilégios de Administrador e Gestão de Recursos -->
+        <div class="topic-title">Privilégios de Administrador</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    Nenhuma permissão marcada como permitida.
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Ver a seção Permissões
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Acessar a seção Gerenciamento de usuários
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Acessar a seção Segurança
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Acessar a seção Faturamento
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Acessar a seção Diretório de Conteúdo
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Acessar a seção Apps
+                </div>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Criar e editar colunas de gestão
+                </div>
+            </div>
+        </div>
+
+        <div class="topic-title">Gestão de Recursos</div>
+        <div class="permission-grid">
+            <div class="permission-column">
+                <h3 class="text-green-600">Permitido</h3>
+                <div class="permission-item">
+                    Nenhuma permissão marcada como permitida.
+                </div>
+            </div>
+            <div class="permission-column">
+                <h3 class="text-red-600">Não Permitido</h3>
+                <div class="permission-item">
+                    <span class="icon not-allowed">&#10006;</span> Acessar diretório de recursos
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Este material é referente ao monday.com e pertence à Alest Consultoria. Todos os direitos reservados.
+        </footer>
+    </div>
+</body>
+</html>
